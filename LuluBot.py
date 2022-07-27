@@ -4,11 +4,12 @@ from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.common.by import By
 from faker import Faker
+import login
 
 servico = Service(GeckoDriverManager().install())
 driver = webdriver.Firefox(service=servico)
 
-with open('./Main/escolas.txt') as banco:  # abrindo arquivo txt com as escolas
+with open('./escolas.txt') as banco:  # abrindo arquivo txt com as escolas
     escolas = banco.readlines()
 for i in range(len(escolas)):
     escolas[i] = escolas[i].strip() 
@@ -19,8 +20,8 @@ faker = Faker('pt_BR')
 def run(): 
     #funcao principal de login
     driver.get("http://pjequitinhonha.ifalmenara.com.br/login")
-    driver.find_element(By.XPATH, '//*[@id="cpf"]').send_keys('')
-    driver.find_element(By.XPATH, '//*[@id="password"]').send_keys('')
+    driver.find_element(By.XPATH, '//*[@id="cpf"]').send_keys(login.cpf)
+    driver.find_element(By.XPATH, '//*[@id="password"]').send_keys(login.passWord)
     driver.find_element(
         By.XPATH, '/html/body/div/div/div[2]/div/div/div/div[2]/form/div[3]/div/button').click()
 

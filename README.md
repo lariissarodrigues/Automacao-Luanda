@@ -17,3 +17,8 @@ Linguagem e bibliotecas utilizadas:
 - Selenium
 - Faker 
 - Random
+
+
+Desenvolvedores: 
+
+Larissa Rodrigues e Leonardo Pinheiro

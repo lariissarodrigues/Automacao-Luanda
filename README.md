@@ -1,7 +1,7 @@
 # Automacao-Luanda
 BOT PARA AUTOMATIZAÇÃO DE TESTES PARA O PROJETO LUANDA
 
-Versão atual: Beta 0.1
+Versão atual: 1.0
 
 Descrição: 
 Esse bot tem foi criado com o objetivo de automatizar testes de entrada no site MUCURI, atualmente nessa versão ele executa essas funcionalidades:
@@ -11,11 +11,12 @@ Esse bot tem foi criado com o objetivo de automatizar testes de entrada no site 
 •Menu para selecionar quantidade de entradas que seram feitas
 
 
-Linguagem e bibliotecas utilizadas: 
+liguagem e afins: 
 
 - Python
 - Selenium
 - Faker 
+- GeckoDriver
 - Random
 
 
